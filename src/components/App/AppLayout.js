@@ -1,15 +1,14 @@
+import Header from "../Header/Header";
+import Nav from "../Nav/Nav";
+
 export default function AppLayout() {
     // State for managing search term and mobile navigation visibility
     return ( 
         <div>
-            <header>
-                <h1>This is the Header</h1>
-            </header>
+            
+            <Header/>
 
-
-            <nav>
-                <h2>This is the Navbar</h2>
-            </nav>
+            <Nav/>
 
 
             <body>
