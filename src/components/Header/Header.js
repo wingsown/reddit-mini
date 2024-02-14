@@ -1,3 +1,4 @@
+import headerCSS from './header.module.css'
 import { useNavigate } from "react-router-dom"
 
 const Header = ({navVisible, setNavVisible}) => {
@@ -14,8 +15,10 @@ const Header = ({navVisible, setNavVisible}) => {
     }
 
     return (
-        <header>
-            <h1>HEADER</h1>
+        <header className={headerCSS.header}>
+            <h1>LOGO</h1>
+            <h1>SEARCHBAR</h1>
+            <h1>MENU</h1>
         </header>
     )
 }
