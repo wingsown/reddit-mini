@@ -1,15 +1,19 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+
 import './App.css';
+import AppLayout from "./AppLayout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>
-          Reddit Mini
-        </h1>
-        
-      </header>
-    </div>
+
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<AppLayout/>}>
+              
+            </Route>
+        </Routes>
+    </BrowserRouter>
+   
   );
 }
 
