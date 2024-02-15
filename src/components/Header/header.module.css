@@ -10,3 +10,8 @@
     align-items: center;
     justify-items: center;
 }
+
+h1 {
+    font-size: 25px;
+    padding: 0 20px;
+}

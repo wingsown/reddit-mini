@@ -1,12 +1,14 @@
+import navCSS from './nav.module.css';
 import { NavLink } from "react-router-dom";
+
 
 const Nav = () => {
     return ( 
-        <nav>
+        <nav className={navCSS.nav} id="nav">
             <h2>NAVBAR</h2>
-            <ul>
+            <ul className={navCSS.ul}>
                 <NavLink>
-                    <li>Link</li>
+                    <li className={navCSS.li}>Link</li>
                 </NavLink>
             </ul>
         </nav>
