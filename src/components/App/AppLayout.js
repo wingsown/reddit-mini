@@ -1,5 +1,7 @@
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
+
 
 export default function AppLayout() {
     // State for managing search term and mobile navigation visibility
@@ -16,9 +18,7 @@ export default function AppLayout() {
             </body>
 
 
-            <footer>
-                <p>This is the footer</p>
-            </footer>
+            <Footer/>
             
         </div>
     )
