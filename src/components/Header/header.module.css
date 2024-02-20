@@ -32,3 +32,11 @@
     padding: 8px;
     border-radius: 20px;
 }
+
+#searchIcon {
+    padding: 6px;
+    border-radius: 100%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}

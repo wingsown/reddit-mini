@@ -25,10 +25,12 @@ const Header = ({navVisible, setNavVisible}) => {
                     placeholder="Search..."
                     value="Search"
                     className={headerCSS.searchInput}/>
+
+                <button type="submit" data-testid="submit-button" id={headerCSS.searchIcon}>
+                    <i className="fas fa-search search-icon" ></i>
+                </button>
             </form>
-            <button type="submit" data-testid="submit-button">
-                <p>Search</p>
-            </button>
+            
 
 
             <h1>MENU</h1>
