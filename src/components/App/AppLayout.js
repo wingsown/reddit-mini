@@ -1,3 +1,4 @@
+import Content from "../Content/Content";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
@@ -10,12 +11,11 @@ export default function AppLayout() {
             
             <Header/>
 
+
             <Nav/>
 
 
-            <body>
-                <p>This is the content</p>
-            </body>
+            <Content/>
 
 
             <Footer/>

@@ -17,7 +17,20 @@ const Header = ({navVisible, setNavVisible}) => {
     return (
         <header className={headerCSS.header}>
             <h1>LOGO</h1>
-            <h1>SEARCHBAR</h1>
+
+            <form className={headerCSS.searchContainer}>
+                <input 
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search..."
+                    value="Search"
+                    className={headerCSS.searchInput}/>
+            </form>
+            <button type="submit" data-testid="submit-button">
+                <p>Search</p>
+            </button>
+
+
             <h1>MENU</h1>
         </header>
     )

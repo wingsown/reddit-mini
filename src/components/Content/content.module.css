@@ -1,0 +1,7 @@
+.content {
+    padding: 10px 10px;
+    width: 100%;
+    background-color: rgb(250, 249, 249);
+    height: calc(100vh - 50px - 35px);
+    overflow-x: scroll;
+}
