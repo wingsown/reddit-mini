@@ -1,0 +1,9 @@
+.footer {
+    min-height: 35px;
+    padding: 10px;
+    background: gray;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+}
