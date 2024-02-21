@@ -1,12 +1,42 @@
 .header {
-    height: 50px;
-    margin: 0;
-    background: gray;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
+  height: 50px;
+  margin: 0;
+  background: gray;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  padding: 2px;
+  margin-right: 20px;
+  transition: width 0.4s ease-in-out;
+}
+
+.searchInput {
+  width: 92%;
+  flex: 1 1;
+  height: 28px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+#searchIcon {
+  padding: 6px;
+  border-radius: 100%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
 }
