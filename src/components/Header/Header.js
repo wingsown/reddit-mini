@@ -23,7 +23,7 @@ const Header = ({navVisible, setNavVisible}) => {
                     type="text"
                     id="searchInput"
                     placeholder="Search..."
-                    value="Search"
+                    
                     className={headerCSS.searchInput}/>
 
                 <button type="submit" data-testid="submit-button" id={headerCSS.searchIcon}>
@@ -33,7 +33,9 @@ const Header = ({navVisible, setNavVisible}) => {
             
 
 
-            <h1>MENU</h1>
+            <div className={headerCSS.menu}>
+                <i className="fa-solid fa-ellipsis-vertical"></i>
+            </div>
         </header>
     )
 }
