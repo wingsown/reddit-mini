@@ -20,7 +20,7 @@
   border-radius: 20px;
   padding: 2px;
   margin-right: 20px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: #fff;
 }
 
@@ -43,8 +43,13 @@
   padding: 6px;
   border-radius: 100%;
   border: none;
-  background-color: white;
+  background-color: #fff;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#searchIcon:hover {
+  background-color: rgb(220, 221, 220);
 }
 
 .menu {
