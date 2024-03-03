@@ -5,10 +5,9 @@ function Footer() {
         <footer className={footerCSS.footer}>
             <a className={footerCSS.footer}>Reddit<span className={footerCSS.logoSpan}>Lite</span></a>
             <div className={footerCSS.contact}>
-                <p><a><i>Link1</i></a></p>
-                <p><a><i>Link2</i></a></p>
-                <p><a><i>Link3</i></a></p>
-                <p><a><i>Link4</i></a></p>
+                <p><a href="mailto: wj.buena@gmail.com"><i className='fa-solid fa-envelope fa-1x'></i></a></p>
+                <p><a href="https://github.com/wingsown" target="blank"><i className='fa-brands fa-github fa-1x'></i></a></p>
+                <p><a href="https://linkedin.com/in/wilsonbuena" target="blank"><i className='fa-brands fa-linkedin fa-1x'></i></a></p>
             </div>
         </footer>
 
