@@ -1,9 +1,31 @@
 .footer {
-    min-height: 35px;
-    padding: 10px;
-    background: gray;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    bottom: 0;
+  min-height: 35px;
+  padding: 10px;
+  background: gray;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+}
+
+.logo {
+  width: 250px;
+  padding-left: 20px;
+}
+
+.logoSpan {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  flex: 1 2;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.contact p {
+  margin: 0 40px;
 }
