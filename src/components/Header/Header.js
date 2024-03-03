@@ -16,7 +16,7 @@ const Header = ({navVisible, setNavVisible}) => {
 
     return (
         <header className={headerCSS.header}>
-            <h1>LOGO</h1>
+            <h1 className={headerCSS.logo}>Reddit<span className={headerCSS.logoSpan}>Lite</span></h1>
 
             <form className={headerCSS.searchContainer}>
                 <input 
