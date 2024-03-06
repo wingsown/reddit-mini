@@ -1,25 +1,35 @@
 .nav {
-    width:100%;
-    min-height: 40px;
-    padding: 0;
-    display: flex;
-    border-right: none;
-    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
-  }
-    
-  .ul {
-      list-style-type: none;
-      margin: 0;
-      padding:0;
-      display: flex;
-      justify-content:center;
-      width: 100%;
-      flex-wrap: wrap;
-      align-content: flex-start;
-  }
-  
-  .li {
-      width: 100%;
-      padding:10px 30px;
-      flex: 0 1;
-  }
+  width: 100%;
+  min-height: 40px;
+  padding: 0;
+  display: flex;
+  border-right: none;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.li {
+  width: 100%;
+  padding: 10px 30px;
+  flex: 0 1;
+}
+
+.li:hover {
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.activeNavLink {
+  font-weight: bold;
+}
