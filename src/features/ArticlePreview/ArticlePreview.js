@@ -1,12 +1,18 @@
 import { Link } from "react-router-dom";
+import Media from "../Media/Media";
+import Title from "../Title/Title";
+import SubReddit from "../SubReddit/SubReddit";
+import articleCSS from "./articlePreview.module.css";
 
 const ArticlePreview = () => {
   return (
-    <div>
-      <Link>
-        <figure>Media feature</figure>
-        <p>Title feature</p>
-        <p>SubReddit feature</p>
+    <div className={articleCSS.card}>
+      <Link className={articleCSS.container}>
+        <figure>
+          <Media />
+        </figure>
+        <Title />
+        <SubReddit />
       </Link>
     </div>
   );
