@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

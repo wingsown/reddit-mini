@@ -18,3 +18,25 @@
   gap: 10px;
   overflow: hidden;
 }
+
+.figure {
+  max-width: 100%; /*To ensure media resizes proportionally */
+  margin: 0 auto;
+}
+
+.media {
+  width: 100%; /*To ensure media takes full width of the container */
+  height: auto; /*Maintain aspect ratio while resizing */
+}
+
+.title {
+  font-size: 14px;
+  text-align: center;
+}
+
+.subReddit {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  justify-content: space-around;
+}
