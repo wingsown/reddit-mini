@@ -8,11 +8,11 @@ const ArticlePreview = () => {
   return (
     <div className={articleCSS.card}>
       <Link className={articleCSS.container}>
-        <figure>
-          <Media />
+        <figure className={articleCSS.figure}>
+          <Media className={articleCSS.media} />
         </figure>
-        <Title />
-        <SubReddit />
+        <Title className={articleCSS.title} />
+        <SubReddit className={articleCSS.subReddit} />
       </Link>
     </div>
   );
