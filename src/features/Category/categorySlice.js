@@ -45,7 +45,7 @@ export const articlePreviewsSlice = createSlice({
         }));
         state.articles = list;
       })
-      .addCase(loadByCategory.rejected, (state, action) => {
+      .addCase(loadByCategory.rejected, (state) => {
         state.isLoadingArticlePreviews = false;
         state.hasError = true;
         state.articles = [];
