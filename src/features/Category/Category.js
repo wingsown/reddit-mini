@@ -29,7 +29,19 @@ const Category = () => {
 
   return (
     <div>
-      <ArticlePreview />
+      {articlePreviews.map((article) => (
+        <ArticlePreview
+          key={article.id}
+          id={article.id}
+          img={article.img}
+          title={article.title}
+          description={article.description}
+          text={article.text}
+          subReddit={article.subReddit}
+          comments={article.comments}
+          score={article.score}
+        />
+      ))}
     </div>
   );
 };
