@@ -8,14 +8,13 @@ import {
 } from "./categorySlice";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import categoryStyle from "./category.module.css";
 
 const Category = () => {
   const dispatch = useDispatch();
 
   // Get states from categorySlice.js
   const articlePreviews = useSelector(selectAllPreviews);
-  const isLoadingPreviews = useSelector(isLoading);
-  const hasLoadingError = useSelector(hasError);
   let { categoryName } = useParams();
 
   if (!categoryName) {
@@ -28,7 +27,7 @@ const Category = () => {
   }, [dispatch, categoryName]);
 
   return (
-    <div>
+    <div className={categoryStyle.container}>
       {articlePreviews.map((article) => (
         <ArticlePreview
           key={article.id}

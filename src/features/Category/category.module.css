@@ -1,0 +1,6 @@
+/* Parent of the cards */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
