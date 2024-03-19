@@ -1,13 +1,44 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useSearchParams } from "react-router-dom";
+import {
+  hasError,
+  isLoading,
+  searchByTerm,
+  selectAllArticles,
+} from "./searchSlice";
+import ArticlePreview from "../ArticlePreview/ArticlePreview";
 
 const Search = () => {
   const [searchParams] = useSearchParams();
   const dispatch = useDispatch();
   const searchTerm = searchParams.get("search");
+  const articlePreviews = useSelector(selectAllArticles);
+  const hasSearchError = useSelector(hasError);
+  const isLoadingSearch = useSelector(isLoading);
 
-  return <div>Articles</div>;
+  // Reload data every time changes are made to the state or when a new term is searched:
+  useEffect(() => {
+    dispatch(searchByTerm(searchTerm));
+  }, [dispatch, searchTerm]);
+
+  // Error handling
+
+  return (
+    <div>
+      {articlePreviews.map((article) => {
+        return (
+          <ArticlePreview
+            key={article.id}
+            id={article.id}
+            img={article.img}
+            title={article.title}
+            description={article.description}
+          />
+        );
+      })}
+    </div>
+  );
 };
 
 export default Search;

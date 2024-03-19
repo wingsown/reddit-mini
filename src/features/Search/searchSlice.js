@@ -1,4 +1,4 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 export const searchByTerm = createAsyncThunk(
   "search/searchByTerm",
@@ -54,7 +54,6 @@ export const searchSlice = createSlice({
 });
 
 export const selectAllArticles = (state) => state.search.articles;
-
 export const isLoading = (state) => state.search.isLoadingSearch;
 export const hasError = (state) => state.search.hasError;
 
