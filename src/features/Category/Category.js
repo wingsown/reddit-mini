@@ -26,6 +26,8 @@ const Category = () => {
     dispatch(loadByCategory(categoryName));
   }, [dispatch, categoryName]);
 
+  // Error handling
+
   return (
     <div className={categoryStyle.container}>
       {articlePreviews.map((article) => (

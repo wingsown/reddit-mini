@@ -5,6 +5,7 @@ import AppLayout from "./AppLayout";
 import Category from "../../features/Category/Category";
 import { Provider } from "react-redux";
 import { store } from "./store";
+import Search from "../../features/Search/Search";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<AppLayout />}>
             <Route index element={<Category />} />
+            <Route path="/search" element={<Search />} />
           </Route>
         </Routes>
       </BrowserRouter>
