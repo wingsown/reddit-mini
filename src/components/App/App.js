@@ -6,6 +6,7 @@ import Category from "../../features/Category/Category";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import Search from "../../features/Search/Search";
+import Article from "../../features/Article/Article";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<AppLayout />}>
             <Route index element={<Category />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/articles/:id" element={<Article />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -15,7 +15,7 @@ const ArticlePreview = ({
 }) => {
   return (
     <div className={articleCSS.card}>
-      <Link className={articleCSS.container}>
+      <Link to={`articles/${id}`} className={articleCSS.container}>
         <figure className={articleCSS.figure}>
           <Media
             className={articleCSS.media}
