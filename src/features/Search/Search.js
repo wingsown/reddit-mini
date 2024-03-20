@@ -34,6 +34,10 @@ const Search = () => {
             img={article.img}
             title={article.title}
             description={article.description}
+            text={article.text}
+            subReddit={article.subReddit}
+            comments={article.comments}
+            vote={article.vote}
           />
         );
       })}
