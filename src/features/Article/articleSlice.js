@@ -32,7 +32,6 @@ export const articleSlice = createSlice({
         state.hasError = false;
       })
       .addCase(loadArticleById.fulfilled, (state, action) => {
-        console.log(action.payload);
         state.isLoadingArticle = false;
         const res = action.payload[0].data.children[0].data;
         state.article = {
