@@ -6,13 +6,16 @@ import {
   isLoadingArticle,
   loadArticleById,
   selectArticle,
+  selectComments,
 } from "./articleSlice";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Comments from "../Comments/Comments";
 
 const Article = () => {
   const dispatch = useDispatch();
   const article = useSelector(selectArticle);
+  const commentList = useSelector(selectComments);
   const isLoading = useSelector(isLoadingArticle);
   const hasError = useSelector(hasErrorArticle);
   const { id } = useParams();
@@ -31,6 +34,9 @@ const Article = () => {
       <div>
         <Title title={title} />
         <SubReddit subReddit={subReddit} score={score} />
+      </div>
+      <div>
+        <Comments commentList={commentList} />
       </div>
     </section>
   );
