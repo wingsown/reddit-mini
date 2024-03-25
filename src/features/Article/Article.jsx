@@ -11,6 +11,7 @@ import {
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "../Comments/Comments";
+import articleCSS from "./article.module.css";
 
 const Article = () => {
   const dispatch = useDispatch();
@@ -28,14 +29,19 @@ const Article = () => {
     id
   );
 
-  const { title, subReddit, score } = article;
+  const { title, subReddit, score, comments } = article;
   return (
-    <section>
-      <div>
-        <Title title={title} />
-        <SubReddit subReddit={subReddit} score={score} />
+    <section className={articleCSS.card}>
+      <div className={articleCSS.post}>
+        <Title className={articleCSS.title} title={title} />
+        <SubReddit
+          className={articleCSS.subReddit}
+          subReddit={subReddit}
+          score={score}
+          comments={comments}
+        />
       </div>
-      <div>
+      <div className={articleCSS.comments}>
         <Comments commentList={commentList} />
       </div>
     </section>
