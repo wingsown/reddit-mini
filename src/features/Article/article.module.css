@@ -30,3 +30,9 @@
   width: 100%;
   margin: 40px 0;
 }
+
+.description {
+  padding: 5px 20px;
+  text-align: justify;
+  font-size: 14px;
+}
