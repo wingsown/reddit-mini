@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Comments from "../Comments/Comments";
 import articleCSS from "./article.module.css";
+import Description from "../Description/Description";
 
 const Article = () => {
   const dispatch = useDispatch();
@@ -29,11 +30,18 @@ const Article = () => {
     id
   );
 
-  const { title, subReddit, score, comments } = article;
+  const { title, subReddit, score, comments, text } = article;
+
+  console.log(article);
   return (
     <section className={articleCSS.card}>
       <div className={articleCSS.post}>
         <Title className={articleCSS.title} title={title} />
+        <Description
+          className={articleCSS.description}
+          text={text}
+          preview={false}
+        />
         <SubReddit
           className={articleCSS.subReddit}
           subReddit={subReddit}

@@ -37,6 +37,7 @@ export const articleSlice = createSlice({
         state.article = {
           title: res.title,
           id: res.id,
+          text: res.selftext,
           img: res.url,
           description: "",
           score: res.score,
