@@ -36,3 +36,18 @@
   text-align: justify;
   font-size: 14px;
 }
+
+.media {
+  flex-shrink: 1;
+  max-width: 350px;
+  display: block;
+  padding: 5px 0;
+}
+
+.mediaContainer {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
