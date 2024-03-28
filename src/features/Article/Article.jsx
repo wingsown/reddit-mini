@@ -13,6 +13,7 @@ import { useParams } from "react-router-dom";
 import Comments from "../Comments/Comments";
 import articleCSS from "./article.module.css";
 import Description from "../Description/Description";
+import Media from "../Media/Media";
 
 const Article = () => {
   const dispatch = useDispatch();
@@ -30,7 +31,7 @@ const Article = () => {
     id
   );
 
-  const { title, subReddit, score, comments, text } = article;
+  const { title, subReddit, score, comments, text, img } = article;
 
   console.log(article);
   return (
@@ -42,12 +43,15 @@ const Article = () => {
           text={text}
           preview={false}
         />
-        <SubReddit
-          className={articleCSS.subReddit}
-          subReddit={subReddit}
-          score={score}
-          comments={comments}
-        />
+        <div className={articleCSS.mediaContainer}>
+          <Media source={img} className={articleCSS.media} />
+          <SubReddit
+            className={articleCSS.subReddit}
+            subReddit={subReddit}
+            score={score}
+            comments={comments}
+          />
+        </div>
       </div>
       <div className={articleCSS.comments}>
         <Comments commentList={commentList} />
