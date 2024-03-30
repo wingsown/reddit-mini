@@ -36,7 +36,9 @@ const Header = ({ navVisible, setNavVisible, searchTerm, setSearchTerm }) => {
   return (
     <header className={headerCSS.header}>
       <h1 className={headerCSS.logo}>
-        Reddit<span className={headerCSS.logoSpan}>Lite</span>
+        <a href="/">
+          Reddit<span className={headerCSS.logoSpan}>Lite</span>
+        </a>
       </h1>
 
       <form className={headerCSS.searchContainer} onSubmit={handleSubmit}>

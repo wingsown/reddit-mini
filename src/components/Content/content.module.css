@@ -1,7 +1,20 @@
 .content {
-    padding: 10px 10px;
+  padding: 10px 10px;
+  width: 100%;
+  background-color: rgb(250, 249, 249);
+  /* height: calc(100vh - 50px - 35px); */
+  overflow-x: scroll;
+}
+
+@media screen and (max-width: 1100px) {
+  .content {
     width: 100%;
-    background-color: rgb(250, 249, 249);
-    height: calc(100vh - 50px - 35px);
-    overflow-x: scroll;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 0px;
+    margin: 0;
+  }
 }

@@ -29,3 +29,15 @@
 .contact p {
   margin: 0 40px;
 }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact p {
+    margin: 0 15px;
+  }
+}

@@ -9,10 +9,15 @@
   justify-content: space-between;
   align-items: center;
   justify-items: center;
+  position: sticky;
 }
 h1 {
   font-size: 25px;
   padding: 0 20px;
+}
+
+h1 a {
+  color: white;
 }
 
 .logo {
@@ -68,4 +73,19 @@ h1 {
 
 .menu {
   display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .searchContainer {
+    margin-right: 5px;
+    max-width: 85%;
+  }
 }
