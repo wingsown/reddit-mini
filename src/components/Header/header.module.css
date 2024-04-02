@@ -1,15 +1,14 @@
 .header {
   height: 50px;
   margin: 0;
-  background: gray;
-  color: white;
+  background: var(--header-color);
+  color: var(--header-title-color);
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   justify-items: center;
-  position: sticky;
 }
 h1 {
   font-size: 25px;
@@ -17,7 +16,7 @@ h1 {
 }
 
 h1 a {
-  color: white;
+  color: var(--header-title-color);
 }
 
 .logo {
@@ -40,7 +39,7 @@ h1 a {
   padding: 2px;
   margin-right: 20px;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
+  background-color: var(--search-container-color);
 }
 
 .searchContainer:hover {
@@ -62,7 +61,7 @@ h1 a {
   padding: 6px;
   border-radius: 100%;
   border: none;
-  background-color: #fff;
+  background-color: var(--search-container-color);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }

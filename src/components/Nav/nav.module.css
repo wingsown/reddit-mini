@@ -4,7 +4,8 @@
   padding: 0;
   display: flex;
   border-right: none;
-  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3);
+  /* box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 .ul {
@@ -22,12 +23,35 @@
   width: 100%;
   padding: 10px 30px;
   flex: 0 1;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--nav-link);
+  position: relative;
 }
 
 .li:hover {
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.25s ease-out;
+}
+
+.li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--nav-link);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .activeNavLink {
