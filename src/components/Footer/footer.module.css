@@ -1,7 +1,8 @@
 .footer {
   min-height: 35px;
   padding: 10px;
-  background: gray;
+  background: var(--header-color);
+  color: var(--header-title-color);
   display: flex;
   align-items: center;
   position: sticky;
@@ -28,6 +29,15 @@
 
 .contact p {
   margin: 0 40px;
+}
+
+.contact p i {
+  color: var(--footer-link);
+  transition: all 0.3s linear;
+}
+
+.contact p i:hover {
+  color: var(--text-color-light);
 }
 
 @media screen and (max-width: 480px) {

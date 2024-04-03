@@ -17,23 +17,25 @@
   width: 100%;
   flex-wrap: wrap;
   align-content: flex-start;
+  column-gap: 3rem;
 }
 
 .li {
   width: 100%;
-  padding: 10px 30px;
+  padding-top: 10px;
+  padding-bottom: 5px;
   flex: 0 1;
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   color: var(--nav-link);
   position: relative;
+  transition: 0.25s ease-in-out;
 }
 
 .li:hover {
   border-radius: 4px;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.25s ease-out;
 }
 
 .li::after {
