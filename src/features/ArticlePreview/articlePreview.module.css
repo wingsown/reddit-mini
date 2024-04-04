@@ -1,12 +1,18 @@
 .card {
   padding: 10px;
-  border-radius: 8px;
-  background-color: gray;
+  border-radius: 0.25rem;
+  background-color: var(--header-title-color);
   max-width: 400px;
   flex: 1 150px;
   margin: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .container {
