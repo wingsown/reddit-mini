@@ -9,7 +9,7 @@ const categories = [
 
 const Nav = () => {
   return (
-    <nav className={navCSS.nav}>
+    <nav className={navCSS.nav} id="nav">
       <ul className={navCSS.ul}>
         {categories.map((category, index) => {
           return (

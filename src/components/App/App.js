@@ -15,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<AppLayout />}>
             <Route index element={<Category />} />
+            <Route path=":categoryName" element={<Category />} />
             <Route path="/search" element={<Search />} />
             <Route path="/articles/:id" element={<Article />} />
           </Route>
